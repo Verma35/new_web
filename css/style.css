@@ -1,21 +1,53 @@
-*{margin:0;padding:0;font-family: 'Public Sans', sans-serif;}
-header{
+*{margin:0;padding:0;
+font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+font-weight:bold;}
+/*header{
 	width:100%;
 	height:100vh;
 	background-image:linear-gradient(to left, #fff 80%, #c3f5ff 20%);
-}
+}*/
+
 .navsection{
-	width:100%;height:20vh;background-color: yellow;
-	display:flex;justify-content:space-around;
+	width:100%;
+	height:10vh;
+	display:flex;
+	justify-content:space-around;
     align-items: center;
-	background-image:linear-gradient(to top ,#fff 80%, #c3f5ff 20%);
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: grad 12.5s ease infinite;
 }
+@keyframes grad {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+a:link, a:visited {
+  
+  color: black;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  border-radius: 10px;
+  border : #45b8ac 3px solid;
+}
+
 
 .logo{
 	width:40%;
 	color:#fff;
 	background-image:linear-gradient(#8d98e3 40%, #854fee 60%);
-	padding-left: 20px;
+	
 	box-sizing: border-box;
 }
 .logo h1{
@@ -26,8 +58,8 @@ header{
 	animation-direction: alternate;
 }
 @keyframes aap{
-	from{ padding-left:40px;}
-	to { padding-right:80px;}
+	from{ padding-left:280px;}
+	to{ padding-left: 50px; }
 }
 
 nav{
@@ -52,13 +84,13 @@ nav a:before{
 nav a:hover:before{
 	width:100%;
 }
-main{
+/*main{
 	height:80vh;
 	display:flex;
 	justify-content: space-around;
 	align-items: center;
 
-}
+}*/
 h2{
 	margin-bottom: 20px;
 }
@@ -81,17 +113,12 @@ h2{
 }
 
 .foot{
-
+margin-top: 30px;
 background-color:rgb(78,255,96);
-position: fixed;
-bottom: 0px;
-right: 0px;
-left :0px;
+width: 100%;
 }
 
-img{
-	border-radius: 100px;
-}
+
 
 .dropdown {
   float: left;
@@ -128,4 +155,83 @@ img{
 */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/*animation*/
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 3em;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+/*
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+/* body box*/
+
+.box1{
+   border-radius: 100px;
+   padding: 25px;
+   text-align: center;
+  /* border : black 3px solid;*/
+   background: linear-gradient(-45deg, #00b09b,#96c93d);
+   background-size: 400% 400%;
+   animation: grad 12.5s ease infinite;
+
+}
+.box{
+	margin-top: 20px;
+	display: flex;
+	justify-content:space-around;
+    align-items: center;
+
 }

@@ -39,7 +39,9 @@ a:link, a:visited {
 
 a:hover, a:active {
   border-radius: 10px;
-  border : #45b8ac 3px solid;
+  /*border : #45b8ac 3px solid;*/
+  transform: scale(1.3);
+  background-color: #45b8ac
 }
 
 
@@ -235,3 +237,138 @@ width: 100%;
     align-items: center;
 
 }
+
+
+/*follow us*/
+
+.follow{
+	margin-top: -15px;
+    width: 100%;
+    text-align: center;
+}
+
+.flogo{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	background-color: #d5f4e6;
+	margin: 10px;
+	border-radius: 25%;
+	box-shadow: 0 5px 15px -5px #00000070;
+	color: #3498db;
+	overflow: hidden;
+	position: relative;
+}
+
+.flogo i{
+	line-height: 67px;
+	font-size: 35px;
+	transition: 0.2 linear;
+
+}
+
+.flogo:hover i{
+	transform: scale(1.3);
+	color: #f1f1f1;
+}
+
+
+.flogo::before{
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	background: #3498db;
+	transform: rotate(45deg);
+	left: -110px;
+	top: 90%; 
+}
+
+.flogo:hover::before{
+	animation: a 0.7s 1;
+	top: -10%;
+	left: -10%;
+
+}
+
+@keyframes a{
+	0%{
+left: -110px;
+	top: 90%;
+	}50%{
+left: 10px;
+	top: -30%;
+		}100%{
+			top: -10%;
+	left: -10%;
+		}
+
+}
+
+.text{
+	font-size: 3em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #0F2027, #203A43, #bdc3c7);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: ani 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+.fwritten {
+  position: relative;
+  font-size: 1.25em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #0F2027, #203A43, #bdc3c7);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: ani 3.5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes ani {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+/*
+high level-------------------------------------------------------------------------------------
+p {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 2em;
+	line-height: .75;
+	margin: 10px 0;
+}
+ styling my button 
+
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: #FFF;
+	color: #122;
+}
+*/

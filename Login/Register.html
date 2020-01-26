@@ -2,34 +2,50 @@
 <html>
 <head>
 	<title>assignments</title>
+	<link rel="stylesheet" type="text/css" href="reg.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 </head>
 <body>
+	<div class="a">
+<div class="box1">
 	<h1>Register</h1>
+
 	<form>
-		<label for =Firstname  >First Name:</label>
-		<input id="Firstname"type="text" name="Firstname" placeholder="jhon" required>
-		<label for =Lastname Name >Last Name:</label>
-		<input id="Lastname"type="text" name="Lastname" placeholder="khan" required>
+		<div class="box">
+		<i class="fas fa-user"></i>
+		<input id="Firstname"type="text" name="Firstname" placeholder="Firstname" required>
+        <br>
+        <i class="fas fa-user-tie"></i>
+		<input id="Lastname"type="text" name="Lastname" placeholder="Lastname" required>
+        </div>
+        <br>
 
 
-<div>
-		 <label for="male">Male</label>
-		 <input name="choice"id="male" type="radio"value="mal">
+
+<div class="ibox" style="margin-left: -30px;">
+        
+         <i class="fas fa-venus-mars"></i>
+		 <label for="Female">Male</label>
+
+		 <input name="choice"id="male" type="radio"value="Male" placeholder="Male">
          <label for="Female">Female</label>
-		 <input name="choice"id="female" type="radio"value="mast">
+		 <input name="choice"id="female" type="radio"value="fem" placeholder="Female">
          <label for="other">other</label>
-		 <input name="choice"id="other" type="radio"value="chak">
+		 <input name="choice"id="other" type="radio"value="cha">
+		
 </div>
-<div>
-		 <label for="email">email:</label>
-		 <input id="email"type="email" name="email" required>
-		 
-		 <label>
-		 	password:
-		 	<input type="password" name="password" pattern=".{5,10}" required title="5 to 10 character">
-		 </label>
-</div>		 
-<div>
+<br>
+<div class="ibox">
+	     <i class="fas fa-envelope"></i>
+		 <input id="email"type="email" name="email" placeholder="Email" required>
+		 <br>
+	     <i class="fas fa-lock"></i>
+		 <input type="password" name="password" pattern=".{5,10}" required title="5 to 10 character" placeholder="password">
+	
+</div>
+<br>		 
+<div style="margin-left: -30px;">
+	     <i class="fas fa-birthday-cake"></i>
 		 <label for ="birthday">Birthday</label>
 		 <select name="month">
 		 	<option value="jan">1</option>
@@ -68,17 +84,20 @@
 			
 		 </select>
 </div>
+<br>
 
 <div>
-		 <label> i agree my terms and condition</label>
+		 <label> I agree my terms and condition</label>
 		 <input type="checkbox" name="terms" required>
 
 </div>
-		 
-
-       <button>Submit</button>
+<br>
+		
+      <a  style="margin-top: 15px; margin-left: -25px;" href="log.html" class="button">Submit</a>
+        
 
 	</form>
-
+ </div>
+</div>
 </body>
 </html>
